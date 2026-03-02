@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laivu noma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="sakums" class="hero">
+<div class="overlay"></div>
+<div class="saturs">
+<h1>Izbaudi dabu no ūdens</h1>
+<p>Labākās laivas un skaistākie maršruti tavam atvaļinājumam.</p>
+<button class="poga" onclick="scrollToRent()">Īrēt laivu tūlīt</button>
+</div>
+</section>
+
+<section id="noma" class="noma-section">
+<h2>Izvēlies savu laivu</h2>
+<div class="kartites-konteiners">
+<div class="laivas-kartite">
+<h3>Kanoe laiva</h3>
+<p>2 personām | 25€</p>
+<button class="mazais-poga">Rezervēt</button>
+</div>
+<div class="laivas-kartite">
+<h3>Kayak</h3>
+<p>2 personai | 25€</p>
+<button class="mazais-poga">Rezervēt</button>
+</div>
+<div class="laivas-kartite">
+
+<h3>SUP dēlis</h3>
+<p>1 personai | 20€</p>
+<button class="mazais-poga">Rezervēt</button>
+</div>
+</div>
+</section>
+<script>
+function scrollToRent() {
+document.getElementById('noma').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</body>
+</html
+<section id="marsruti" class="marsruti-section">
+        <h2>Populārākie maršruti</h2>
+        <div class="marsrutu-konteiners">
+            
+            <div class="marsruta-kartite">
+                <div class="marsruta-bilde" style="background-image: url('http://www.atputasbazes.lv/lv/turisma_marsruti_celojumi/1181_salacas_pilsetas_mazsalacastaicelesalacgriva/');"></div>
+                <div class="marsruta-info">
+                    <h3>Mazsalaca - Vīķu tilts</h3>
+                    <p><strong>Garums:</strong> 35km</p>
+                    <p><strong>Ilgums:</strong> 2 dienas</p>
+                    <p>Ideāls maršruts lai izbaudītu 2 dienas uz upes, paliekot Līču skolas kempingā.</p>
+                    <button class="mazais-poga">Izvēlēties šo maršrutu</button>
+                </div>
+            </div>
+
+            <div class="marsruta-kartite">
+                <div class="marsruta-bilde" style="background-image: url('https://www.eliesma.lv/sites/default/files/media/images/articles/img_7466.jpg');"></div>
+                <div class="marsruta-info">
+                    <h3>Mazsalaca - Līču skola</h3>
+                    <p><strong>Garums:</strong> 17km</p>
+                    <p><strong>Ilgums:</strong> aptuveni 2.5-5h</p>
+                    <p>Ideāls maršruts atpūtai ar ģimeni.</p>
+                    <button class="mazais-poga">Izvēlēties šo maršrutu</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="rezervacija" class="rezervacijas-section">
+    <div class="forma-konteiners">
+        <h2>Rezervē savu piedzīvojumu</h2>
+        <p>Aizpildi formu, un mēs ar tevi sazināsimies, lai apstiprinātu laiku!</p>
+        
+        <form id="pieteikuma-forma">
+            <div class="formas-grupa">
+                <label for="vards">Vārds, Uzvārds</label>
+                <input type="text" id="vards" name="vards" placeholder="Jūsu vārds" required>
+            </div>
+
+            <div class="formas-grupa">
+                <label for="datums">Izvēlies dienu</label>
+                <input type="date" id="datums" name="datums" required>
+            </div>
+
+            <div class="formas-grupa">
+                <label for="papildus">Papildus vēlmes </label>
+                <textarea id="papildus" name="papildus" rows="4" placeholder="Kuru maršrutu un laivu izvēlējies?"></textarea>
+            </div>
+
+            <button type="submit" class="poga-iesniegt">Nosūtīt pieteikumu</button>
+        </form>
+        <div id="pazinojums" style="display:none; margin-top: 20px; color: green; font-weight: bold;">
+            Paldies! Tavs pieteikums ir saņemts.
+        </div>
+    </div>
+</section>
